@@ -9,12 +9,9 @@ import '../shape/trapezoid.dart';
 /// Represents a TextElement object of Ml Kit
 class TextElement extends RecognizerText {
   TextElement({
-    required String text,
-    required Trapezoid trapezoid,
-  }) : super(
-          text: text,
-          trapezoid: trapezoid,
-        );
+    required super.text,
+    required super.trapezoid,
+  });
 
   factory TextElement.fromTextElement(
     ml_kit.TextElement textElement,

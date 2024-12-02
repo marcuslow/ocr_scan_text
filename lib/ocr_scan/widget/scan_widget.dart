@@ -18,11 +18,11 @@ class ScanWidget extends StatefulWidget {
   final Function(OcrTextRecognizerResult ocrTextResult) ocrTextResult;
 
   const ScanWidget({
-    Key? key,
+    super.key,
     required this.scanModules,
     required this.ocrTextResult,
     required this.respectRatio,
-  }) : super(key: key);
+  });
 
   @override
   ScanWidgetState createState() => ScanWidgetState();
